@@ -137,6 +137,19 @@
     filter:grayscale(70%); opacity:0.55; transition:all .18s ease;
   }
   .lang-switch button.active{ background:var(--bg-alt); filter:none; opacity:1; }
+  .nav-credit{
+    width:24px; height:24px; border-radius:50%; flex-shrink:0;
+    border:1px solid rgba(193,84,127,0.35);
+    display:flex; align-items:center; justify-content:center; position:relative;
+    text-decoration:none; transition:opacity .2s ease, border-color .2s ease;
+  }
+  .nav-credit:hover{ opacity:0.7; border-color:rgba(193,84,127,0.75); }
+  .nav-credit .mono{
+    font-family:'UnifrakturMaguntia', cursive;
+    font-size:11px; line-height:1; color:var(--fuchsia-dark);
+    display:flex; position:relative; top:1px; user-select:none;
+  }
+  .nav-credit .mono span:last-child{ margin-left:-3px; }
   .hamburger{ display:none; background:none; border:none; cursor:pointer; padding:6px; }
   .hamburger span{ display:block; width:22px; height:2px; background:var(--ink); margin:5px 0; }
 
@@ -310,10 +323,20 @@
   .credit-line{
     display:flex; align-items:center; justify-content:center; gap:12px;
     padding:22px 0 30px; border-top:1px solid rgba(233,228,216,0.08);
+    text-decoration:none; cursor:pointer; transition:opacity .2s ease;
   }
+  .credit-line:hover{ opacity:0.75; }
+  .credit-line:hover .credit-seal{ border-color:rgba(201,168,118,0.75); }
   .credit-line .credit-text{
     font-size:0.66rem; letter-spacing:0.04em; color:#867f6e; font-style:italic;
   }
+  .credit-line--light{
+    margin-top:14px; padding:0; border-top:none;
+  }
+  .credit-line--light .credit-text{ color:var(--ink-soft); }
+  .credit-line--light .credit-seal{ border-color:rgba(193,84,127,0.35); }
+  .credit-line--light .credit-seal .mono{ color:var(--fuchsia-dark); }
+  .credit-line--light:hover .credit-seal{ border-color:rgba(193,84,127,0.7); }
   .credit-seal{
     width:34px; height:34px; border-radius:50%; flex-shrink:0;
     border:1px solid rgba(201,168,118,0.45);
@@ -355,6 +378,9 @@
         <button type="button" id="lang-it" class="active" aria-label="Italiano" title="Italiano">🇮🇹</button>
         <button type="button" id="lang-en" aria-label="English" title="English">🇬🇧</button>
       </div>
+      <a class="nav-credit" href="mailto:fiorel2709@gmail.com?subject=RICHIESTA%20INFORMAZIONI%20PER%20SITO" title="Website designed by Leonardo Fiore" aria-label="Website designed by Leonardo Fiore">
+        <span class="mono"><span>L</span><span>F</span></span>
+      </a>
       <button class="hamburger" id="hamburger" aria-label="Menu">
         <span></span><span></span><span></span>
       </button>
@@ -548,6 +574,12 @@
           </div>
           <div class="field full">
             <button type="submit" class="btn btn-primary btn-block" data-i18n="booking.submit">Invia richiesta</button>
+            <a class="credit-line credit-line--light" href="mailto:fiorel2709@gmail.com?subject=RICHIESTA%20INFORMAZIONI%20PER%20SITO">
+              <span class="credit-text">Website designed by Leonardo Fiore</span>
+              <span class="credit-seal" aria-hidden="true">
+                <span class="mono"><span>L</span><span>F</span></span>
+              </span>
+            </a>
             <p id="formStatus"></p>
             <p class="form-note" data-i18n="booking.note">Il modulo aprirà la vostra app di posta con la richiesta già compilata, pronta da inviare.</p>
           </div>
@@ -600,12 +632,6 @@
     <div class="bottom-bar">
       <span data-i18n="footer.copy">© 2026 Le Luire Fiori Milano. Tutti i diritti riservati.</span>
       <span data-i18n="footer.tag">Fiori freschi, fatti con cura, ogni giorno.</span>
-    </div>
-    <div class="credit-line">
-      <span class="credit-text">Website designed by Leonardo Fiore</span>
-      <span class="credit-seal" aria-hidden="true">
-        <span class="mono"><span>L</span><span>F</span></span>
-      </span>
     </div>
   </div>
 </footer>
