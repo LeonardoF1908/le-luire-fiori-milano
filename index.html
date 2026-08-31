@@ -9,6 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Jost:wght@300;400;500;600&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="assets/img/hero-evento.jpg" fetchpriority="high">
 <style>
   :root{
     --bg:#fbf8f3;
@@ -393,7 +394,7 @@
   <!-- HERO -->
   <section class="hero" style="padding:0;">
     <div class="hero-media">
-      <img src="assets/img/shop-front.jpg" alt="Vetrina del negozio Le Luire Fiori a Milano">
+      <img fetchpriority="high" decoding="async" src="assets/img/hero-evento.jpg" alt="Composizione floreale de Le Luire Fiori per un matrimonio all'aperto">
     </div>
     <div class="wrap hero-inner">
       <span class="eyebrow" data-i18n="hero.eyebrow">FIORAIO A MILANO</span>
@@ -410,7 +411,7 @@
   <section class="about" id="chi-siamo">
     <div class="wrap about-grid">
       <div class="about-media reveal">
-        <img src="assets/img/owner.jpg" alt="Marco Marcheselli, il titolare de Le Luire Fiori, sorridente nel suo negozio">
+        <img loading="lazy" decoding="async" src="assets/img/owner.jpg" alt="Marco Marcheselli, il titolare de Le Luire Fiori, sorridente nel suo negozio">
         <div class="badge">
           <div class="num">4,6★</div>
           <div class="lbl" data-i18n="about.badge">su Google (53 recensioni)</div>
@@ -439,7 +440,7 @@
       </div>
       <div class="service-grid">
         <div class="service-card reveal">
-          <div class="service-media"><img src="assets/img/servizio-laurea.jpg" alt="Bouquet di rose rosse per corona d'alloro laurea"></div>
+          <div class="service-media"><img loading="lazy" decoding="async" src="assets/img/servizio-laurea.jpg" alt="Bouquet di rose rosse per corona d'alloro laurea"></div>
           <div class="service-body">
             <h3 data-i18n="services.s1.title">Corona d'alloro per laurea</h3>
             <p data-i18n="services.s1.desc">La tradizionale corona d'alloro e il bouquet di rose per il giorno più importante, realizzati su misura.</p>
@@ -447,7 +448,7 @@
           </div>
         </div>
         <div class="service-card reveal">
-          <div class="service-media"><img src="assets/img/servizio-bouquet.jpg" alt="Bouquet di fiori misti pronto per la consegna"></div>
+          <div class="service-media"><img loading="lazy" decoding="async" src="assets/img/servizio-bouquet.jpg" alt="Bouquet di fiori misti pronto per la consegna"></div>
           <div class="service-body">
             <h3 data-i18n="services.s2.title">Bouquet di fiori</h3>
             <p data-i18n="services.s2.desc">Bouquet freschi per ogni occasione: un pensiero, un compleanno, un semplice "ti penso". Scegliamo insieme i fiori più adatti.</p>
@@ -455,7 +456,7 @@
           </div>
         </div>
         <div class="service-card reveal">
-          <div class="service-media"><img src="assets/img/servizio-eventi.jpg" alt="Composizione floreale per matrimonio all'aperto"></div>
+          <div class="service-media"><img loading="lazy" decoding="async" src="assets/img/servizio-eventi.jpg" alt="Composizione floreale per matrimonio all'aperto"></div>
           <div class="service-body">
             <h3 data-i18n="services.s3.title">Consulenza per eventi</h3>
             <p data-i18n="services.s3.desc">Un incontro con Marco per progettare insieme l'allestimento floreale del vostro evento, dal concept ai colori.</p>
@@ -463,7 +464,7 @@
           </div>
         </div>
         <div class="service-card reveal">
-          <div class="service-media"><img src="assets/img/servizio-fornitura.jpg" alt="Tavolo apparecchiato con centrotavola floreali per un evento"></div>
+          <div class="service-media"><img loading="lazy" decoding="async" src="assets/img/servizio-fornitura.jpg" alt="Tavolo apparecchiato con centrotavola floreali per un evento"></div>
           <div class="service-body">
             <h3 data-i18n="services.s4.title">Fornitura fiori per eventi</h3>
             <p data-i18n="services.s4.desc">Fiori e composizioni per matrimoni, feste e cerimonie: dagli allestimenti del tavolo agli addobbi.</p>
@@ -484,32 +485,32 @@
       </div>
       <div class="flower-grid">
         <div class="flower-card reveal">
-          <div class="flower-media"><img src="assets/img/flower-rosa.jpg" alt="Bouquet di rose rosse"></div>
+          <div class="flower-media"><img loading="lazy" decoding="async" src="assets/img/flower-rosa.jpg" alt="Bouquet di rose rosse"></div>
           <h3 data-i18n="flowers.f1.name">Rosa</h3>
           <p data-i18n="flowers.f1.desc">Simbolo di eleganza senza tempo. La usiamo nei bouquet più classici e nelle composizioni per matrimoni: intensa, profumata, sempre la più richiesta.</p>
         </div>
         <div class="flower-card reveal">
-          <div class="flower-media"><img src="assets/img/flower-girasole.jpg" alt="Girasoli con eucalipto"></div>
+          <div class="flower-media"><img loading="lazy" decoding="async" src="assets/img/flower-girasole.jpg" alt="Girasoli con eucalipto"></div>
           <h3 data-i18n="flowers.f2.name">Girasole</h3>
           <p data-i18n="flowers.f2.desc">Allegro e solare, porta luce in ogni stanza. Perfetto per chi ama i colori decisi e i pensieri che mettono subito il buonumore.</p>
         </div>
         <div class="flower-card reveal">
-          <div class="flower-media"><img src="assets/img/flower-ranuncolo.jpg" alt="Bouquet di ranuncoli rossi e arancioni"></div>
+          <div class="flower-media"><img loading="lazy" decoding="async" src="assets/img/flower-ranuncolo.jpg" alt="Bouquet di ranuncoli rossi e arancioni"></div>
           <h3 data-i18n="flowers.f3.name">Ranuncolo</h3>
           <p data-i18n="flowers.f3.desc">Petali delicati e vellutati, disposti a strati come piccole rose. Un fiore di stagione che amiamo per la sua eleganza naturale.</p>
         </div>
         <div class="flower-card reveal">
-          <div class="flower-media"><img src="assets/img/flower-ortensia.jpg" alt="Ortensie bianche in vaso"></div>
+          <div class="flower-media"><img loading="lazy" decoding="async" src="assets/img/flower-ortensia.jpg" alt="Ortensie bianche in vaso"></div>
           <h3 data-i18n="flowers.f4.name">Ortensia</h3>
           <p data-i18n="flowers.f4.desc">Grandi corolle piene e morbide: da sole o abbinate ad altri fiori, danno volume e freschezza a qualsiasi composizione.</p>
         </div>
         <div class="flower-card reveal">
-          <div class="flower-media"><img src="assets/img/flower-garofano.jpg" alt="Garofano verde in un bouquet"></div>
+          <div class="flower-media"><img loading="lazy" decoding="async" src="assets/img/flower-garofano.jpg" alt="Garofano verde in un bouquet"></div>
           <h3 data-i18n="flowers.f5.name">Garofano verde</h3>
           <p data-i18n="flowers.f5.desc">Un fiore originale e sorprendente, perfetto per chi cerca qualcosa fuori dagli schemi: dona un tocco fresco e moderno.</p>
         </div>
         <div class="flower-card reveal">
-          <div class="flower-media"><img src="assets/img/flower-gerbera.jpg" alt="Gerbere arancioni e rosa"></div>
+          <div class="flower-media"><img loading="lazy" decoding="async" src="assets/img/flower-gerbera.jpg" alt="Gerbere arancioni e rosa"></div>
           <h3 data-i18n="flowers.f6.name">Gerbera</h3>
           <p data-i18n="flowers.f6.desc">Colori vivaci e forma grafica: la gerbera è il fiore giusto per aggiungere allegria e movimento a ogni composizione.</p>
         </div>
@@ -525,9 +526,9 @@
         <h2 data-i18n="gallery.h2">Un assaggio delle nostre composizioni</h2>
       </div>
       <div class="gallery-grid">
-        <img class="reveal" src="assets/img/interno-bouquet.jpg" alt="Bouquet con garofano verde, rose e lavanda">
-        <img class="reveal" src="assets/img/bouquet-2.jpg" alt="Bouquet di rose rosse e alstroemeria">
-        <img class="reveal" src="assets/img/bouquet-3.jpg" alt="Bouquet di rose rosse e arancioni">
+        <img class="reveal" loading="lazy" decoding="async" src="assets/img/interno-bouquet.jpg" alt="Bouquet con garofano verde, rose e lavanda">
+        <img class="reveal" loading="lazy" decoding="async" src="assets/img/bouquet-2.jpg" alt="Bouquet di rose rosse e alstroemeria">
+        <img class="reveal" loading="lazy" decoding="async" src="assets/img/bouquet-3.jpg" alt="Bouquet di rose rosse e arancioni">
       </div>
     </div>
   </section>
@@ -556,7 +557,7 @@
           </div>
           <div class="field">
             <label for="f-date" data-i18n="booking.date">Data desiderata</label>
-            <input id="f-date" name="date" type="date">
+            <input id="f-date" name="date" type="date" min="">
           </div>
           <div class="field full">
             <label for="f-service" data-i18n="booking.service">Servizio</label>
@@ -766,6 +767,9 @@ document.getElementById('lang-en').addEventListener('click', ()=>applyLang('en')
 let savedLang = 'it';
 try{ savedLang = localStorage.getItem('lf-lang') || 'it'; }catch(e){}
 applyLang(savedLang);
+
+// Prevent picking a past date in the booking form
+document.getElementById('f-date').min = new Date().toISOString().split('T')[0];
 
 // Mobile nav
 const hamburger = document.getElementById('hamburger');
